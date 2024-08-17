@@ -14,6 +14,8 @@
     <p><h1>{{objects.titulo}}</h1></p>
     <p>{{objects.descripcion}}</p>
 
+    <a href="{% url 'detail' objects.pk %}">{{objects.titulo}}</a>
+
     <hr>
 
     {% endfor %}
